@@ -1,0 +1,11 @@
+[package]
+name = "watcher"
+version = "0.0.1"
+authors = [ "Guy Hughes <ypcrts@noreply.users.github.com>" ]
+
+[dependencies]
+syslog_rfc5424 = { git= "https://github.com/roguelazer/rust-syslog-rfc5424", rev ="324ab62d92daf0b698a9d7efe9428b8a398e06f4" } 
+
+[profile.release]
+lto = true
+panic = 'abort'
